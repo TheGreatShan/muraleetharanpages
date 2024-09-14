@@ -1,5 +1,6 @@
 import {SocialIcon} from "react-social-icons";
 import Design from "muralee/app/components/design";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -12,7 +13,9 @@ export default function Home() {
                 <SocialIcon network={"linkedin"} url={"https://www.linkedin.com/in/shansai-muraleetharan"}
                             bgColor={"black"} className={"mr-2"}/>
                 <SocialIcon network={"github"} url={"https://github.com/TheGreatShan"}
-                            bgColor={"black"}/>
+                            bgColor={"black"} className={"mr-2"}/>
+                <Link href={"/about"} className={"text-white bg-black p-4 rounded-full"}>About</Link>
+
             </div>
         </div>
     );
