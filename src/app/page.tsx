@@ -7,8 +7,12 @@ export default function Home() {
                 <h1 className="text-6xl">Shansai</h1>
                 <h1 className="text-8xl">Muraleetharan</h1>
             </div>
-            <SocialIcon network={"linkedin"} url={"https://www.linkedin.com/in/shansai-muraleetharan"}
-                        bgColor={"black"}/>
+            <div className={"mt-4"}>
+                <SocialIcon network={"linkedin"} url={"https://www.linkedin.com/in/shansai-muraleetharan"}
+                            bgColor={"black"}/>
+                <SocialIcon network={"github"} url={"https://github.com/TheGreatShan"}
+                            bgColor={"black"}/>
+            </div>
         </div>
     );
 }
