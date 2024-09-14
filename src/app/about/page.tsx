@@ -1,9 +1,10 @@
 import Design from "muralee/app/components/design";
+import Header from "muralee/app/components/Header";
 
 export default function About() {
     return (
         <Design>
-            <h1>hi</h1>
+            <Header title={"About"}/>
         </Design>
     )
 }
