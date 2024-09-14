@@ -9,7 +9,7 @@ export default function Home() {
             </div>
             <div className={"mt-4"}>
                 <SocialIcon network={"linkedin"} url={"https://www.linkedin.com/in/shansai-muraleetharan"}
-                            bgColor={"black"}/>
+                            bgColor={"black"} className={"mr-2"}/>
                 <SocialIcon network={"github"} url={"https://github.com/TheGreatShan"}
                             bgColor={"black"}/>
             </div>
