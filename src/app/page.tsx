@@ -1,5 +1,4 @@
 import {SocialIcon} from "react-social-icons";
-import Design from "muralee/app/components/design";
 import Link from "next/link";
 
 export default function Home() {
