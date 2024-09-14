@@ -7,7 +7,7 @@ export default function About() {
             <div className={"mt-5"}>
                 <Header title={"About"}/>
                 <p className={"mt-4 mx-[50px]"}>
-                    Hi, I'm a software developer with a passion for creating web applications using React and C#. I
+                    Hi, I am a software developer with a passion for creating web applications using React and C#. I
                     started
                     my journey in 2021, when I decided to pursue my dream of becoming a programmer. Since then, I have
                     learned a lot from online courses, books, and projects. I enjoy solving problems, learning new
