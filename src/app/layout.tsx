@@ -6,11 +6,8 @@ export const metadata: Metadata = {
     description: "Portfolio from Shansai Muraleetharan",
 };
 
-export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
-    children: React.ReactNode;
-}>) {
+export default function RootLayout({children}: Readonly<{children: React.ReactNode;}>) {
+
     return (
         <html lang="en">
         <body>
