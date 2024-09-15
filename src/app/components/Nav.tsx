@@ -8,8 +8,9 @@ export default function Nav() {
                 <h1 className={"md:text-3xl text-sm"}>Muraleetharan</h1>
             </div>
             <div className={"fixed right-0 mx-10"}>
-                <Link href={"/"} title={"Home"} className={"mx-10"}>Home</Link>
-                <Link href={"/about"} title={"About"}>About</Link>
+                <Link href={"/"} title={"Home"} className={"mr-10"}>Home</Link>
+                <Link href={"/about"} title={"About"} className={"mr-10"}>About</Link>
+                <Link href={"/career"} title={"Career"} className={"mr-10"}>Career</Link>
             </div>
         </div>
     )
