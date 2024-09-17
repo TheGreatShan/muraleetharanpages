@@ -1,12 +1,15 @@
 import {SocialIcon} from "react-social-icons";
 import Link from "next/link";
 import Head from 'next/head';
+
 export default function Home() {
     return (
         <div>
             <Head>
                 <meta name={"description"} content="Shansai Muraleetharan Portfolio" key="titleDescription"/>
-                <meta name={"keywords"} content="Shansai, Muraleetharan, Shansai Muraleetharan, TheGreatShan, Shansai Linkedin, Shansai Muraleetharan Linkedin, Muraleetharan Linkedin" key="titleKeywords" />
+                <meta name={"keywords"}
+                      content="Shansai, Muraleetharan, Shansai Muraleetharan, TheGreatShan, Shansai Linkedin, Shansai Muraleetharan Linkedin, Muraleetharan Linkedin"
+                      key="titleKeywords"/>
             </Head>
             <div className={"border-solid border-[7px] border-white bg-[#e7e5e4] md:h-screen h-full"}>
                 <div
