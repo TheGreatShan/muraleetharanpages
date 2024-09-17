@@ -21,8 +21,8 @@ export default function Home() {
                                     bgColor={"black"} className={"mr-2"}/>
                         <SocialIcon network={"github"} url={"https://github.com/TheGreatShan"}
                                     bgColor={"black"} className={"mr-2"}/>
-                        <Link href={"/about"} className={"text-white bg-black p-4 rounded-full mr-2"}>About</Link>
-                        <Link href={"/career"} className={"text-white bg-black p-4 rounded-full"}>Career</Link>
+                        <Link href={"/about"} className={"text-white bg-black py-4 px-3 rounded-full mr-2"}>About</Link>
+                        <Link href={"/career"} className={"text-white bg-black py-4 px-3 rounded-full"}>Career</Link>
                     </div>
                 </div>
             </div>
