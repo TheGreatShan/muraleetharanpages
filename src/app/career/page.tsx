@@ -23,7 +23,7 @@ export default function Career() {
                             <p className={"md:inline"}>KPMG Switzerland <span
                                 className={"md:inline md:visible invisible"}> | </span>
                             </p>
-                            <p className={"md:inline"}>Apprentice Software Engineer</p>
+                            <p className={"md:inline"}>Software Engineering Apprentice</p>
                             <p>August 2021 - now | Hybrid</p>
                         </div>
                     </div>
