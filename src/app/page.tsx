@@ -11,7 +11,7 @@ export default function Home() {
                       content="Shansai, Muraleetharan, Shansai Muraleetharan, TheGreatShan, Shansai Linkedin, Shansai Muraleetharan Linkedin, Muraleetharan Linkedin"
                       key="titleKeywords"/>
             </Head>
-            <div className={"border-solid border-[7px] border-white bg-[#e7e5e4] md:h-screen h-full"}>
+            <div className={"border-solid select-none border-[7px] border-white bg-[#e7e5e4] md:h-screen h-full"}>
                 <div
                     className="content-center bg-[#e7e5e4] h-screen md:h-full text-black font-libre border-solid border-[7px] p-10 border-black">
                     <h1 className="md:text-6xl text-3xl">Shansai</h1>
