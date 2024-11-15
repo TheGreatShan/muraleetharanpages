@@ -1,5 +1,6 @@
 import type {Metadata} from "next";
 import "./globals.css";
+import Template from "./template";
 
 export const metadata: Metadata = {
     title: "Shansai Muraleetharan",
@@ -11,7 +12,7 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
     return (
         <html lang="en">
         <body>
-        {children}
+        <Template>{children}</Template>
         </body>
         </html>
     );
