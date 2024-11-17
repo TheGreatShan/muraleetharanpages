@@ -7,14 +7,13 @@ export default function Design({children}: Readonly<{ children: React.ReactNode;
             <div
                 className={"border-solid border-[7px] border-white bg-[#e7e5e4] min-h-screen w-screen h-full flex flex-grow"}>
                 <div
-                    className={"border-solid border-[7px] border-black bg-[#e7e5e4] text-black font-libre w-screen min-h-screen h-full"}>
+                    className={"border-solid border-[7px] border-black bg-[#e7e5e4] text-black font-libre w-screen min-h-full"}>
                     <Nav/>
                     <div className={"md:p-10"}>
                         {children}
                     </div>
                 </div>
             </div>
-
         </>
     )
 }
