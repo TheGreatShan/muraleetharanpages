@@ -16,6 +16,7 @@ export default function Nav() {
                 <Link href={"/"} title={"Home"} className={"mr-10"}>Home</Link>
                 <Link href={"/about"} title={"About"} className={"mr-10"}>About</Link>
                 <Link href={"/career"} title={"Career"} className={"mr-10"}>Career</Link>
+                <Link href={"/tools"} title={"Tools"} className={"mr-10"}>Tools</Link>
             </div>
         </div>
     )
