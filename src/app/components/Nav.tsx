@@ -1,6 +1,11 @@
+"use client"
+
 import Link from "next/link";
 
+
 export default function Nav() {
+
+
     return (
         <div className={"bg-[#e7e5e4] text-black font-libre p-10 backdrop-blur-sm select-none"}>
             <div className={"fixed left-0 md:ml-[100px] ml-[50px] md:visible invisible"}>
