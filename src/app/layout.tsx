@@ -3,7 +3,10 @@ import "./globals.css";
 import Template from "./template";
 
 export const metadata: Metadata = {
-    title: "Shansai Muraleetharan",
+    title: {
+        template: '%s | Muraleetharan',
+        default: 'Shansai Muraleetharan',
+      },
     description: "Portfolio from Shansai Muraleetharan",
 };
 
