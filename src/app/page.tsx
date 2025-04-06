@@ -1,8 +1,21 @@
+"use client"
+
 import {SocialIcon} from "react-social-icons";
 import Link from "next/link";
 import Head from 'next/head';
+import { useState, useEffect } from "react";
 
 export default function Home() {
+    const [ctime, setTime] = useState<string>("");
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setTime(new Date().toLocaleTimeString("en-US", { hour12: false }));
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <div>
             <Head>
@@ -14,6 +27,11 @@ export default function Home() {
             <div className={"border-solid select-none border-[7px] border-white bg-[#e7e5e4] md:h-screen h-full"}>
                 <div
                     className="content-center bg-[#e7e5e4] h-screen md:h-full text-black font-libre border-solid border-[7px] p-10 border-black">
+                    <div className={"fixed top-0 left-0 font-bold ml-10 mt-10 text-[30px]"}>
+                        <h1>
+                            {ctime}
+                        </h1>
+                    </div>
                     <h1 className="md:text-6xl text-3xl">Shansai</h1>
                     <h1 className="md:text-8xl text-4xl">Muraleetharan</h1>
                     <div className={"mt-4"}>
