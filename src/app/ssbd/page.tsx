@@ -17,7 +17,7 @@ export default function About() {
             <div className={"mt-5"}>
                 <Header title={"SSBD - Same same but different "}/>
                 <div className="flex mx-auto my-auto mt-10">
-                    <input type="string" className="rounded-xl mx-auto my-auto px-5 py-5" placeholder="hh:mm" onChange={(e) => setTime(e.target.value)}/>
+                    <input type="time" className="rounded-xl mx-auto my-auto px-5 py-5" placeholder="hh:mm" onChange={(e) => setTime(e.target.value)}/>
                 </div>
                 <div className="flex">
                     <h1 className="mx-auto my-auto font-bold text-3xl mt-10">{result}</h1>
