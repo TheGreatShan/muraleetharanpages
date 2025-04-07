@@ -26,14 +26,14 @@ export default function Home() {
             </Head>
             <div className={"border-solid select-none border-[7px] border-white bg-[#e7e5e4] md:h-screen h-full"}>
                 <div
-                    className="content-center bg-[#e7e5e4] h-screen md:h-full text-black font-libre border-solid border-[7px] p-10 border-black">
+                    className="content-center bg-[#e7e5e4] h-screen md:h-full text-black font-sans border-solid border-[7px] p-10 border-black">
                     <div className={"fixed top-0 left-0 font-bold ml-10 mt-10 text-[30px]"}>
                         <h1>
                             {ctime}
                         </h1>
                     </div>
-                    <h1 className="md:text-6xl text-3xl">Shansai</h1>
-                    <h1 className="md:text-8xl text-4xl">Muraleetharan</h1>
+                    <h1 className="md:text-6xl text-3xl font-serif">Shansai</h1>
+                    <h1 className="md:text-8xl text-4xl font-serif">Muraleetharan</h1>
                     <div className={"mt-4"}>
                         <SocialIcon network={"linkedin"} url={"https://www.linkedin.com/in/shansai-muraleetharan"}
                                     bgColor={"black"} className={"mr-2"}/>
@@ -41,7 +41,7 @@ export default function Home() {
                                     bgColor={"black"} className={"mr-2"}/>
                         <Link href={"/about"} className={"text-white bg-black py-4 px-3 rounded-full mr-2"}>About</Link>
                         <Link href={"/career"} className={"text-white bg-black py-4 px-3 rounded-full mr-2"}>Career</Link>
-                        <Link href={"/tools"} className={"text-white bg-black py-4 px-3 rounded-full"}>Tools</Link>
+                        <Link href={"/ssbd"} className={"text-white bg-black py-4 px-3 rounded-full"}>SSBD</Link>
                     </div>
                 </div>
             </div>

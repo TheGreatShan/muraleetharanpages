@@ -22,10 +22,10 @@ export default function Design({children}: Readonly<{ children: React.ReactNode;
                 <div
                     className={"border-solid border-[7px] border-black bg-[#e7e5e4] text-black font-libre w-screen min-h-full"}>
                     <Nav/>
-                    <div className={"md:p-10"}>
+                    <div className={"md:p-10 font-sans"}>
                         {children}
                     </div>
-                    <div className={"fixed bottom-0 right-0 font-bold mr-10 mb-10"}>
+                    <div className={"fixed bottom-0 right-0 text-2xl font-bold font-sans mr-10 mb-10"}>
                         <h1>
                             {ctime}
                         </h1>
