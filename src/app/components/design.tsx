@@ -25,7 +25,7 @@ export default function Design({children}: Readonly<{ children: React.ReactNode;
                     <div className={"md:p-10 font-sans"}>
                         {children}
                     </div>
-                    <div className={"fixed bottom-0 right-0 font-bold font-sans mr-10 mb-10"}>
+                    <div className={"fixed bottom-0 right-0 text-2xl font-bold font-sans mr-10 mb-10"}>
                         <h1>
                             {ctime}
                         </h1>
