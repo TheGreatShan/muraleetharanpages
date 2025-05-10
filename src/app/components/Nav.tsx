@@ -26,7 +26,7 @@ export default function Nav() {
                 </div>
                 <ul
                     tabIndex={0}
-                    className="menu menu-sm dropdown-content bg-secondary-content  rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    className="menu menu-sm dropdown-content bg-secondary-content  rounded-box z-1 mt-3 w-52 p-2 shadow">
                         <li><Link href={"/"} title={"Home"} className={"mr-10 md:invisible visible"}>Home</Link></li>
                         <li><Link href={"/about"} title={"About"} className={"mr-10"}>About</Link></li>
                         <li><Link href={"/career"} title={"Career"} className={"mr-10"}>Career</Link></li>

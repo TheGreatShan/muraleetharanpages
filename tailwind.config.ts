@@ -7,12 +7,6 @@ const config : any = {
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
-    },
-    plugins: [
-        require('daisyui'),
-    ],
-    daisyui: {
-        themes: ["winter"]
     }
 };
 export default config;
