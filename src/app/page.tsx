@@ -28,9 +28,11 @@ export default function Home() {
                 <div
                     className="content-center bg-primary-content h-screen md:h-full text-black font-sans border-solid border-[7px] p-10 border-black">
                     <div className={"fixed top-0 left-0 font-bold ml-10 mt-10 text-[30px]"}>
-                        <h1>
-                            {ctime}
-                        </h1>
+                        {
+                            ctime == "" 
+                            ? <span className="loading loading-dots loading-xs"></span>
+                            : <h1>{ctime}</h1>
+                        }
                     </div>
                     <h1 className="md:text-6xl text-3xl font-serif">Shansai</h1>
                     <h1 className="md:text-8xl text-4xl font-serif">Muraleetharan</h1>

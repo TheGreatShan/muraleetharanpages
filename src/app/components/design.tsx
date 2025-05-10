@@ -30,9 +30,11 @@ export default function Design({children}: Readonly<{ children: React.ReactNode;
                             <p>I do not warrant or assume any legal liability for the quality, reliability, or suitability of any information on this webpage. </p>
                         </div>
                         <div className={"fixed bottom-0 right-0 text-2xl font-bold font-sans mr-10 mb-10 select-none"}>
-                            <h1>
-                                {ctime}
-                            </h1>
+                        {
+                            ctime == "" 
+                            ? <span className="loading loading-dots loading-xs"></span>
+                            : <h1>{ctime}</h1>
+                        }
                         </div>
                 </div>
             </div>
