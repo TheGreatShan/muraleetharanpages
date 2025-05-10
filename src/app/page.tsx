@@ -36,13 +36,17 @@ export default function Home() {
                     </div>
                     <h1 className="md:text-6xl text-3xl font-serif">Shansai</h1>
                     <h1 className="md:text-8xl text-4xl font-serif">Muraleetharan</h1>
-                    <div className={"mt-4"}>
-                        <SocialIcon network={"linkedin"} url={"https://www.linkedin.com/in/shansai-muraleetharan"}
-                                    bgColor={"black"} className={"mr-2"}/>
-                        <SocialIcon network={"github"} url={"https://github.com/TheGreatShan"}
-                                    bgColor={"black"} className={"mr-2"}/>
-                        <Link href={"/about"} className={"text-white bg-black py-4 px-3 rounded-full mr-2"}>About</Link>
-                        <Link href={"/career"} className={"text-white bg-black py-4 px-3 rounded-full mr-2"}>Career</Link>
+                    <div className={"mt-4 md:flex mx-auto"}>
+                        <div>
+                            <SocialIcon network={"linkedin"} url={"https://www.linkedin.com/in/shansai-muraleetharan"}
+                                        bgColor={"black"} className={"mr-2"}/>
+                            <SocialIcon network={"github"} url={"https://github.com/TheGreatShan"}
+                                        bgColor={"black"} className={"mr-2"}/>
+                        </div>
+                        <div className="mt-5 sm:my-auto">
+                            <Link href={"/about"} className={"text-white bg-black py-4 px-3 rounded-full mr-2"}>About</Link>
+                            <Link href={"/career"} className={"text-white bg-black py-4 px-3 rounded-full mr-2"}>Career</Link>
+                        </div>
                     </div>
                 </div>
             </div>
