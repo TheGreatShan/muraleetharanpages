@@ -44,6 +44,9 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <div className="hidden md:block fixed bottom-0 ml-10 mb-10 font-sans text-xs select-none">
+                <h1 className="font-bold">&copy; 2025 Shansai Muraleetharan</h1>
+            </div>
         </div>
     );
 }
