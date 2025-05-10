@@ -32,7 +32,7 @@ export default function Nav() {
                         <li><Link href={"/career"} title={"Career"} className={"mr-10"}>Career</Link></li>
                 </ul>
                 </div>
-                <div className="px-5 text-xl md:navbar-start sm:navbar-center">
+                <div className="pl-5 text-xl md:navbar-start sm:navbar-center">
                     <Link href="/">
                         <h1 className={"md:text-2xl text-sm font-serif font-bold"}>Shansai Muraleetharan</h1>
                     </Link>
