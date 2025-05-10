@@ -1,22 +1,19 @@
-import type {Config} from "tailwindcss";
+import daisyui from "daisyui";
 
-const config: Config = {
+const config : any = {
     content: [
         "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
-        extend: {
-            colors: {
-                background: "var(--background)",
-                foreground: "var(--foreground)",
-            },
-            fontFamily: {
-                'libre': ['"Libre Baskerville"', 'serif'],
-            },
-        },
     },
-    plugins: [],
+    plugins: [
+        require('daisyui'),
+    ],
+    daisyui: {
+        themes: ["winter"]
+    }
 };
 export default config;
+
