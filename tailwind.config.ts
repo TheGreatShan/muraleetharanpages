@@ -1,5 +1,3 @@
-import daisyui from "daisyui";
-
 const config : any = {
     content: [
         "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,6 +5,9 @@ const config : any = {
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
+    }, 
+    daisyui: {
+        themes: ["winter"],
     }
 };
 export default config;
