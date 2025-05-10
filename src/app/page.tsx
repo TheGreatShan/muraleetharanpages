@@ -24,9 +24,9 @@ export default function Home() {
                       content="Shansai, Muraleetharan, Shansai Muraleetharan, TheGreatShan, Shansai Linkedin, Shansai Muraleetharan Linkedin, Muraleetharan Linkedin"
                       key="titleKeywords"/>
             </Head>
-            <div className={"border-solid select-none border-[7px] border-white bg-[#e7e5e4] md:h-screen h-full"}>
+            <div className={"border-solid select-none border-[7px] border-white bg-primary md:h-screen h-full"}>
                 <div
-                    className="content-center bg-[#e7e5e4] h-screen md:h-full text-black font-sans border-solid border-[7px] p-10 border-black">
+                    className="content-center bg-primary-content h-screen md:h-full text-black font-sans border-solid border-[7px] p-10 border-black">
                     <div className={"fixed top-0 left-0 font-bold ml-10 mt-10 text-[30px]"}>
                         <h1>
                             {ctime}
@@ -44,7 +44,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="hidden md:block fixed bottom-0 ml-10 mb-10 font-sans text-xs select-none">
+            <div className="hidden md:block fixed bottom-0 ml-10 mb-10 font-sans text-xs text-black select-none">
                 <h1 className="font-bold">&copy; 2025 Shansai Muraleetharan</h1>
             </div>
         </div>
