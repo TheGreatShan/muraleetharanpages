@@ -3,4 +3,6 @@ layer(base);
 
 @import 'tailwindcss';
 
-@plugin 'daisyui';
+@plugin "daisyui" {
+  themes: acid --default, acid --prefersdark, acid;
+}

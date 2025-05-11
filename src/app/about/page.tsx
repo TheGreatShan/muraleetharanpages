@@ -17,7 +17,7 @@ export default function About() {
                     my
                     work and skills. Feel free to contact me if you want to know more about me or my projects.
                 </p>
-                </div>
-            </Design>
+            </div>
+        </Design>
         )
     }

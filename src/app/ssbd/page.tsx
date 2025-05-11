@@ -5,7 +5,7 @@ import Header from "muralee/app/components/header";
 import { useEffect, useState } from "react";
 import { CalculateDecimal } from "../lib/CalculateDecimal";
 
-export default function About() {
+export default function Ssbd() {
     const [Time, setTime] = useState<string>("")
     const [result, setResult] = useState<number>(0)
     useEffect(() => {

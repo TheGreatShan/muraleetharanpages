@@ -7,7 +7,7 @@ export default function Nav() {
 
 
     return (
-        <div className="navbar bg-primary-content">
+        <div className="navbar bg-base-100">
             <div className="navbar-start">
                 <div className="dropdown">
                 <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -26,21 +26,20 @@ export default function Nav() {
                 </div>
                 <ul
                     tabIndex={0}
-                    className="menu menu-sm dropdown-content bg-secondary-content  rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><Link href={"/"} title={"Home"} className={"mr-10 md:invisible visible"}>Home</Link></li>
-                        <li><Link href={"/about"} title={"About"} className={"mr-10"}>About</Link></li>
-                        <li><Link href={"/career"} title={"Career"} className={"mr-10"}>Career</Link></li>
+                    className="menu menu-sm dropdown-content bg-base-200 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><Link href={"/"} title={"Home"} >Home</Link></li>
+                        <li><Link href={"/about"} title={"About"}>About</Link></li>
+                        <li><Link href={"/career"} title={"Career"}>Career</Link></li>
                 </ul>
                 </div>
-                <div className="px-5 text-xl md:navbar-start sm:navbar-center">
+                <div className="pl-5 md:navbar-start sm:navbar-center">
                     <Link href="/">
-                        <h1 className={"md:text-2xl text-sm font-serif font-bold"}>Shansai Muraleetharan</h1>
+                        <h1 className={"md:text-xl text-xs font-serif font-bold"}>Shansai Muraleetharan</h1>
                     </Link>
                 </div>
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><Link href={"/"} title={"Home"} className={"btn btn-ghost mr-10 md:invisible visible"}>Home</Link></li>
                     <li><Link href={"/about"} title={"About"} className={"btn btn-ghost mr-10"}>About</Link></li>
                     <li><Link href={"/career"} title={"Career"} className={"btn btn-ghost mr-10"}>Career</Link></li>
                 </ul>
