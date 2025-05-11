@@ -7,7 +7,6 @@ const config : any = {
     theme: {
     }, 
     daisyui: {
-        themes: ["winter"],
     }
 };
 export default config;
