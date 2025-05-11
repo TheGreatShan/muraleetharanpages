@@ -34,7 +34,7 @@ export default function Nav() {
                 </div>
                 <div className="pl-5 text-xl md:navbar-start sm:navbar-center">
                     <Link href="/">
-                        <h1 className={"md:text-2xl text-sm font-serif font-bold"}>Shansai Muraleetharan</h1>
+                        <h1 className={"md:text-xl text-xs font-serif font-bold"}>Shansai Muraleetharan</h1>
                     </Link>
                 </div>
             </div>
