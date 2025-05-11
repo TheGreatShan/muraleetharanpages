@@ -38,7 +38,7 @@ export default function Home() {
                     <div className={"mt-4 md:flex mx-auto"}>
                         <div>
                             <SocialIcon network={"linkedin"} url={"https://www.linkedin.com/in/shansai-muraleetharan"}
-                                        bgColor={"black"} className={"mr-2 btn"}/>
+                                        bgColor={"black"} className={"mr-2"}/>
                             <SocialIcon network={"github"} url={"https://github.com/TheGreatShan"}
                                         bgColor={"black"} className={"mr-2"}/>
                         </div>
