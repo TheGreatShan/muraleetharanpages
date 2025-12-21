@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Snowfall from "react-snowfall";
-import Snowflake from "react-snowfall/lib/Snowflake";
 
 export default function Template({
   children,
