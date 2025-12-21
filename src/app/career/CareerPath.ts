@@ -19,7 +19,7 @@ export const careers = [
             image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/KPMG_blue_logo.svg/2560px-KPMG_blue_logo.svg.png",
             imageAlt: "KPMG Logo",
             companyName: "KPMG Switzerland",
-            role: "Software Engineering Apprentice",
+            role: "Junior Software Engineer",
             roleTime: "August 2025 - now | Hybrid",
             width: 110,
             height: 100,
