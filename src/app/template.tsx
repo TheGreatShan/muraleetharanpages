@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Snowfall from "react-snowfall";
 
 export default function Template({
   children,
@@ -13,6 +14,7 @@ export default function Template({
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "easeInOut", stiffness: 50 }}
     >
+      <Snowfall />
       {children}
     </motion.div>
   );
