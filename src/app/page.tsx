@@ -4,6 +4,7 @@ import {SocialIcon} from "react-social-icons";
 import Link from "next/link";
 import Head from 'next/head';
 import { useState, useEffect } from "react";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
     const [ctime, setTime] = useState<string>("");
@@ -25,7 +26,7 @@ export default function Home() {
                       key="titleKeywords"/>
             </Head>
                 <div
-                    className="content-center bg-base-100 h-screen h-full text-black font-sans border-solid border-[7px] p-10 border-info-content">
+                    className="content-center bg-base-100 h-screen h-full text-white font-sans border-solid border-[7px] p-10 border-info-content">
                     <div className={"fixed top-0 left-0 font-bold ml-10 mt-10 text-[30px]"}>
                         {
                             ctime == "" 
@@ -33,8 +34,20 @@ export default function Home() {
                             : <h1>{ctime}</h1>
                         }
                     </div>
-                    <h1 className="md:text-6xl text-3xl font-serif">Shansai</h1>
-                    <h1 className="md:text-8xl text-4xl font-serif">Muraleetharan</h1>
+                    <TypeAnimation
+                        sequence={[
+                            'Shansai Muraleetharan',
+                            2000,
+                            'C# Developer',
+                            2000,
+                            'CS Student @ ZHAW',
+                            2000,
+                            'Startup @ AnyWell',
+                            2000,
+                        ]}
+                        repeat={Infinity}
+                        className="text-2xl md:text-5xl font-serif"
+                        />
                     <div className={"mt-4 md:flex mx-auto"}>
                         <div>
                             <SocialIcon network={"linkedin"} url={"https://www.linkedin.com/in/shansai-muraleetharan"}
@@ -48,7 +61,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            <div className="hidden md:block fixed bottom-0 ml-10 mb-10 font-sans text-xs text-black select-none">
+            <div className="hidden md:block fixed bottom-0 ml-10 mb-10 font-sans text-xs text-white select-none">
                 <h1 className="font-bold">&copy; 2025 Shansai Muraleetharan</h1>
             </div>
         </div>
