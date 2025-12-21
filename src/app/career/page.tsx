@@ -12,7 +12,7 @@ export default function Career() {
                 <Header title={"Career"} />
                 {
                     careers.map(career => (
-                        <div className={"mt-4 mx-[50px] md:text-[12pt] text-[9pt]"}>
+                        <div className={"mt-4 mx-[50px] md:text-[12pt] text-[9pt]"} key={`${career.companyName}${career.description}`}>
                                 <div className={"md:flex"}>
                                     <div className={"flex justify-center"}>
                                         <Image
