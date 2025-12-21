@@ -27,7 +27,7 @@ export default function Home() {
             </Head>
                 <div
                     className="content-center bg-base-100 h-screen h-full text-white font-sans border-solid border-[7px] p-10 border-info-content">
-                    <div className={"fixed top-0 left-0 font-bold ml-10 mt-10 text-[30px]"}>
+                    <div className={"fixed top-0 left-0 font-bold ml-10 mt-10 text-[30px] font-serif"}>
                         {
                             ctime == "" 
                             ? <span className="loading loading-dots loading-xs"></span>
@@ -56,12 +56,12 @@ export default function Home() {
                                         bgColor={"black"} className={"mr-2"}/>
                         </div>
                         <div className="mt-5 sm:my-auto">
-                            <Link href={"/about"} className={"text-white bg-black py-4 px-3 rounded-full mr-2"}>About</Link>
-                            <Link href={"/career"} className={"text-white bg-black py-4 px-3 rounded-full mr-2"}>Career</Link>
+                            <Link href={"/about"} className={"text-white bg-black font-serif py-4 px-3 rounded-full mr-2"}>About</Link>
+                            <Link href={"/career"} className={"text-white bg-black font-serif py-4 px-3 rounded-full mr-2"}>Career</Link>
                         </div>
                     </div>
                 </div>
-            <div className="hidden md:block fixed bottom-0 ml-10 mb-10 font-sans text-xs text-white select-none">
+            <div className="hidden md:block fixed bottom-0 ml-10 mb-10 font-serif text-xs text-white select-none">
                 <h1 className="font-bold">&copy; 2025 Shansai Muraleetharan</h1>
             </div>
         </div>

@@ -18,17 +18,17 @@ export default function Design({children}: Readonly<{ children: React.ReactNode;
     return (
         <>
             <div
-                className={"border-solid border-[7px] border-info-content bg-primary-content min-h-screen w-screen h-full flex grow"}>
+                className={"border-solid font-serif border-[7px] border-info-content bg-primary-content min-h-screen w-screen h-full flex grow"}>
                 <div
                     className={"bg-base-100 text-white font-libre w-screen min-h-full"}>
                     <Nav/>
                     <div className={"md:p-10 font-sans"}>
                         {children}
                     </div>
-                        <div className="hidden md:block fixed bottom-0 left-0 ml-10 mb-10 font-sans text-xs select-none">
+                        <div className="hidden md:block fixed bottom-0 left-0 ml-10 mb-10 text-xs select-none">
                             <h1 className="font-bold">&copy; 2025 Shansai Muraleetharan</h1>
                         </div>
-                        <div className={"fixed bottom-0 right-0 text-2xl font-bold font-sans mr-10 mb-10 select-none"}>
+                        <div className={"fixed bottom-0 right-0 text-2xl font-bold mr-10 mb-10 select-none"}>
                         {
                             ctime == "" 
                             ? <span className="loading loading-dots loading-xs"></span>
