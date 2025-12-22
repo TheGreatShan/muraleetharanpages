@@ -30,7 +30,7 @@ export default function Career() {
                                         </p>
                                         <p className={"md:inline"}>{career.role}</p>
                                         <p>{career.roleTime}</p>
-                                        {career.hasBadge && 
+                                        {career.hasBadge && career.badge !== "" && 
                                                <span className="inline-flex items-center gap-1 rounded bg-[#00ff99] px-2 py-1 text-black text-xs"> 
                                                     <svg className="size-[1em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                         <g fill="currentColor" strokeLinejoin="miter" strokeLinecap="butt">
