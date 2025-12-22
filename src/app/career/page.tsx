@@ -10,28 +10,29 @@ export default function Career() {
         <Design>
             <div className={"mt-5"}>
                 <Header title={"Career"} />
+                <div className="md:flex-col">
                 {
                     careers.map(career => (
-                        <div className={"mt-4 mx-[50px] md:text-[12pt] text-[9pt]"} key={`${career.companyName}${career.description}`}>
-                                <div className={"md:flex"}>
-                                    <div className={"grid place-items-center w-full md:w-auto"}>
-                                        <Image
-                                            src={career.image}
-                                            alt={career.imageAlt}
-                                            width={career.width}
-                                            height={career.height}
-                                        />
-                                    </div>
+                        <div className={"card border rounded-lg bg-zinc-500 p-5 md:justify-center mt-4 mx-[50px] md:text-[12pt] text-[9pt]"} key={`${career.companyName}${career.description}`}>
+                                <div className={"card-body md:flex md:flex-col items-center justify-center"}>
+                                    <div className="md:flex gap-4 md:flex-row items-center">
+                                        <div className="rounded-lg">
+                                            <Image
+                                                src={career.image}
+                                                alt={career.imageAlt}
+                                                width={career.width}
+                                                height={career.height}
+                                            />
+                                        </div>
 
+                                        <span className="text-center text-2xl font-bold bold mt-2">{career.companyName}</span>
+                                    </div>
                                     <div
-                                        className={"md:ml-5 md:mt-0 mt-5 font-bold md:text-left text-center"}>
-                                        <p className={"md:inline"}>{career.companyName} <span
-                                            className={"md:inline md:visible invisible"}> | </span>
-                                        </p>
-                                        <p className={"md:inline"}>{career.role}</p>
-                                        <p>{career.roleTime}</p>
+                                        className={"md:ml-5 md:mt-0 mt-5 font-bold text-center"}>
+                                        <p className={"text-xl mt-3rem"}>{career.role}</p>
+                                        <p className="mt-3rem">{career.roleTime}</p>
                                         {career.hasBadge && career.badge !== "" && 
-                                               <span className="inline-flex items-center gap-1 rounded bg-[#00ff99] px-2 py-1 text-black text-[9pt]"> 
+                                               <span className="mt-3rem inline-flex items-center gap-1 rounded bg-[#00ff99] px-2 py-1 text-black text-md"> 
                                                     <svg className="size-[1em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                         <g fill="currentColor" strokeLinejoin="miter" strokeLinecap="butt">
                                                             <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" strokeLinecap="square" strokeMiterlimit="10" strokeWidth="2"></circle>
@@ -61,6 +62,7 @@ export default function Career() {
                             </div>
                     ))
                 }
+                </div>
             </div>
         </Design>
     )
