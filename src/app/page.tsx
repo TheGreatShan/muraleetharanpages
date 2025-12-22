@@ -29,7 +29,7 @@ export default function Home() {
                       key="titleKeywords"/>
             </Head>
                 <div
-                    className="content-center bg-gray-400 h-screen h-full text-white font-sans border-solid border-[7px] p-10 border-info-content">
+                    className="content-center bg-base-200 h-screen h-full text-white font-sans border-solid border-[7px] p-10 border-info-content">
                     <div className={"fixed top-0 left-0 font-bold ml-10 mt-10 text-[30px] font-serif"}>
                         {
                             ctime == "" 

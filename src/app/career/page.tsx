@@ -10,12 +10,12 @@ export default function Career() {
         <Design>
             <div className={"mt-5"}>
                 <Header title={"Career"} />
-                <div className="md:flex-col">
+                <div className="flex-col">
                 {
                     careers.map(career => (
-                        <div className={"cursor-default transform transition duration-500 hover:scale-105 card border rounded-lg bg-zinc-500 p-5 md:justify-center mt-4 mx-[50px] md:text-[12pt] text-[9pt]"} key={`${career.companyName}${career.description}`}>
-                                <div className={"card-body md:flex md:flex-col items-center justify-center"}>
-                                    <div className="md:flex gap-4 md:flex-row items-center">
+                        <div className={"cursor-default w-screen transform transition duration-500 hover:scale-105 card border rounded-lg bg-zinc-500 p-5 justify-center mt-4 mx-[50px] md:text-[12pt] text-[9pt]"} key={`${career.companyName}${career.description}`}>
+                                <div className={"card-body flex flex-col items-center justify-center"}>
+                                    <div className="flex gap-4 flex-row items-center">
                                         <div className="rounded-lg">
                                             <Image
                                                 src={career.image}

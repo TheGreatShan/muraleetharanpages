@@ -11,7 +11,7 @@ export default function Design({children}: Readonly<{ children: React.ReactNode;
             <div
                 className={"border-solid font-serif border-[7px] border-info-content bg-primary-content min-h-screen w-screen h-full flex grow"}>
                 <div
-                    className={"bg-gray-400 text-white font-libre w-screen min-h-full"}>
+                    className={"bg-base-200 text-white font-libre w-screen min-h-full"}>
                     <Nav/>
                     <div className={"md:p-10 font-sans"}>
                         {children}
