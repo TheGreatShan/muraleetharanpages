@@ -5,6 +5,7 @@ import Link from "next/link";
 import Head from 'next/head';
 import { useState, useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
+import NeuralNetworkBackground from "./components/neuralnetwork";
 
 export default function Home() {
     const [ctime, setTime] = useState<string>("");
@@ -26,7 +27,7 @@ export default function Home() {
                       key="titleKeywords"/>
             </Head>
                 <div
-                    className="content-center bg-base-100 h-screen h-full text-white font-sans border-solid border-[7px] p-10 border-info-content">
+                    className="content-center bg-base-200 h-screen h-full text-white font-sans border-solid border-[7px] p-10 border-info-content">
                     <div className={"fixed top-0 left-0 font-bold ml-10 mt-10 text-[30px] font-serif"}>
                         {
                             ctime == "" 
@@ -34,6 +35,7 @@ export default function Home() {
                             : <h1>{ctime}</h1>
                         }
                     </div>
+                    <NeuralNetworkBackground actionable={true} />
                     <TypeAnimation
                         sequence={[
                             'Shansai Muraleetharan',
@@ -51,13 +53,13 @@ export default function Home() {
                     <div className={"mt-4 md:flex mx-auto"}>
                         <div>
                             <SocialIcon network={"linkedin"} url={"https://www.linkedin.com/in/shansai-muraleetharan"}
-                                        bgColor={"black"} className={"mr-2"}/>
+                                        bgColor={"black"} className={"inline-block text-white bg-black font-serif py-4 px-3 rounded-full mr-2 shadow-lg shadow-white/20"}/>
                             <SocialIcon network={"github"} url={"https://github.com/TheGreatShan"}
-                                        bgColor={"black"} className={"mr-2"}/>
+                                        bgColor={"black"} className={"inline-block text-white bg-black font-serif py-4 px-3 rounded-full mr-2 shadow-lg shadow-white/20"}/>
                         </div>
                         <div className="mt-5 sm:my-auto">
-                            <Link href={"/about"} className={"text-white bg-black font-serif py-4 px-3 rounded-full mr-2"}>About</Link>
-                            <Link href={"/career"} className={"text-white bg-black font-serif py-4 px-3 rounded-full mr-2"}>Career</Link>
+                            <Link href={"/about"} className={"inline-block text-white bg-black font-serif py-4 px-3 rounded-full mr-2 shadow-lg shadow-white/20"}>About</Link>
+                            <Link href={"/career"} className={"inline-block text-white bg-black font-serif py-4 px-3 rounded-full mr-2 shadow-lg shadow-white/20"}>Career</Link>
                         </div>
                     </div>
                 </div>
