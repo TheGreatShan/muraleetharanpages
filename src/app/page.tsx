@@ -6,11 +6,10 @@ import Head from 'next/head';
 import { useState, useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
 import Snowfall from "react-snowfall";
+import NeuralNetworkBackground from "./components/neuralnetwork";
 
 export default function Home() {
     const [ctime, setTime] = useState<string>("");
-    const currentMonth = new Date().getMonth();
-    const isWinterMonth = currentMonth === 0 || currentMonth === 10 || currentMonth === 11;
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -37,7 +36,7 @@ export default function Home() {
                             : <h1>{ctime}</h1>
                         }
                     </div>
-                          {isWinterMonth && <Snowfall />}
+                    <NeuralNetworkBackground />
                     <TypeAnimation
                         sequence={[
                             'Shansai Muraleetharan',
