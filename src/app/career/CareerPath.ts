@@ -1,12 +1,32 @@
-export const careers = [
+export interface CareerPath {
+    image: string;
+    imageAlt : string;
+    companyName: string;
+    role: string;
+    roleTime: string;
+    width: number;
+    height: number;
+    hasBadge: boolean;
+    badge: string;
+    description: CareerPathDescription[]
+}
+export interface CareerPathDescription {
+    id: number;
+    icon: string;
+    text: string;
+}
+
+export const careers : CareerPath[] = [
     {
             image: "https://avatars.githubusercontent.com/u/213492932?v=4",
             imageAlt: "Anywell Logo",
             companyName: "AnyWell",
             role: "Founder & Software Engineer",
-            roleTime: "September 2025 - now | Hybrid",
-            width: 50,
-            height: 50,
+            roleTime: "September 2025 - now | Remote",
+            width: 60,
+            height: 60,
+            hasBadge: false,
+            badge: "",
             description: [
                 {
                     id: 1,
@@ -23,6 +43,8 @@ export const careers = [
             roleTime: "August 2025 - now | Hybrid",
             width: 110,
             height: 100,
+            hasBadge: false,
+            badge: "",
             description: [
                 {
                     id: 1,
@@ -45,6 +67,8 @@ export const careers = [
             roleTime: "August 2021 - July 2025 | Hybrid",
             width: 110,
             height: 100,
+            hasBadge: true,
+            badge: "Grade: 5.8 / 6.0 (2nd best Apprentice in Zurich)",
             description: [
                 {
                     id: 1,
