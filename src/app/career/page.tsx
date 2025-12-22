@@ -31,7 +31,7 @@ export default function Career() {
                                         <p className={"md:inline"}>{career.role}</p>
                                         <p>{career.roleTime}</p>
                                         {career.hasBadge && career.badge !== "" && 
-                                               <span className="inline-flex items-center gap-1 rounded bg-[#00ff99] px-2 py-1 text-black text-xs"> 
+                                               <span className="inline-flex items-center gap-1 rounded bg-[#00ff99] px-2 py-1 text-black text-[9pt]"> 
                                                     <svg className="size-[1em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                                         <g fill="currentColor" strokeLinejoin="miter" strokeLinecap="butt">
                                                             <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" strokeLinecap="square" strokeMiterlimit="10" strokeWidth="2"></circle>
