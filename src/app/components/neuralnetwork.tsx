@@ -5,7 +5,11 @@ import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import type { Engine } from "tsparticles-engine";
 
-export default function NeuralNetworkBackground() {
+export interface NeuralNetworkProps {
+    actionable: boolean;
+}
+
+export default function NeuralNetworkBackground({actionable} : NeuralNetworkProps) {
     const particlesInit = useCallback(async (engine: Engine) => {
         await loadSlim(engine);
     }, []);
@@ -60,11 +64,11 @@ export default function NeuralNetworkBackground() {
                 interactivity: {
                     events: {
                         onHover: {
-                            enable: true,
+                            enable: actionable,
                             mode: "grab"
                         },
                         onClick: {
-                            enable: true,
+                            enable: actionable,
                             mode: "push"
                         }
                     },

@@ -3,6 +3,7 @@
 import Nav from "muralee/app/components/Nav";
 import React from "react";
 import { useState, useEffect } from "react";
+import NeuralNetworkBackground from "./neuralnetwork";
 
 
 export default function Design({children}: Readonly<{ children: React.ReactNode; }>) {
@@ -10,6 +11,7 @@ export default function Design({children}: Readonly<{ children: React.ReactNode;
         <>
             <div
                 className={"border-solid font-serif border-[7px] border-info-content bg-primary-content min-h-screen w-screen h-full flex grow"}>
+                    <NeuralNetworkBackground actionable={false} />
                 <div
                     className={"bg-base-200 text-white font-libre w-screen min-h-full"}>
                     <Nav/>

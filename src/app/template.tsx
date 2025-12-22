@@ -14,6 +14,7 @@ export default function Template({
       initial={{ y: 20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "easeInOut", stiffness: 50 }}
+      className="select-none"
     >
       {children}
     </motion.div>

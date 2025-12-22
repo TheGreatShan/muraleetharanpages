@@ -36,7 +36,7 @@ export default function Home() {
                             : <h1>{ctime}</h1>
                         }
                     </div>
-                    <NeuralNetworkBackground />
+                    <NeuralNetworkBackground actionable={true} />
                     <TypeAnimation
                         sequence={[
                             'Shansai Muraleetharan',
