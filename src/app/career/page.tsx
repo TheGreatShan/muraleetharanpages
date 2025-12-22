@@ -10,12 +10,12 @@ export default function Career() {
         <Design>
             <div className={"mt-5"}>
                 <Header title={"Career"} />
-                <div className="flex-col">
+                <div className="flex flex-col gap-4 px-4 md:px-12">
                 {
                     careers.map(career => (
-                        <div className={"cursor-default w-screen transform transition duration-500 hover:scale-105 card border rounded-lg bg-zinc-500 p-5 justify-center mt-4 mx-[50px] md:text-[12pt] text-[9pt]"} key={`${career.companyName}${career.description}`}>
+                        <div className={"cursor-default md:transform md:transition md:duration-500 hover:scale-105 card border rounded-lg bg-zinc-900 p-5 justify-center mt-4 mx-[50px] md:text-[12pt] text-[9pt]"} key={`${career.companyName}${career.description}`}>
                                 <div className={"card-body flex flex-col items-center justify-center"}>
-                                    <div className="flex gap-4 flex-row items-center">
+                                    <div className="flex md:gap-4 flex-col items-center gap-3 w-full">
                                         <div className="rounded-lg">
                                             <Image
                                                 src={career.image}
@@ -25,12 +25,12 @@ export default function Career() {
                                             />
                                         </div>
 
-                                        <span className="text-center text-2xl font-bold bold mt-2">{career.companyName}</span>
+                                        <span className="text-center text-xl sm:text-2xl font-bold mt-1">{career.companyName}</span>
                                     </div>
                                     <div
-                                        className={"md:ml-5 md:mt-0 mt-5 font-bold text-center"}>
-                                        <p className={"text-xl mt-3rem"}>{career.role}</p>
-                                        <p className="mt-3rem">{career.roleTime}</p>
+                                        className={"md:ml-5 md:mt-0 font-bold text-center"}>
+                                        <p className={"text-base sm:text-lg md:text-xl md:mt-3"}>{career.role}</p>
+                                        <p className="text-sm sm:text-base mt-2">{career.roleTime}</p>
                                         {career.hasBadge && career.badge !== "" && 
                                                <span className="mt-3rem inline-flex items-center gap-1 rounded bg-[#00ff99] px-2 py-1 text-black text-md"> 
                                                     <svg className="size-[1em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -44,8 +44,8 @@ export default function Career() {
                                     
                                     </div>
                                 </div>
-                                <div className={"mx-5 mt-5"}>
-                                    <ul>
+                                <div className={"mt-4 px-2"}>
+                                    <ul className="space-y-2">
                                         {career.description.map((achievement) => (
                                             <li 
                                                 key={achievement.id} 
