@@ -26,7 +26,7 @@ export default function Design({children}: Readonly<{ children: React.ReactNode;
                         {children}
                     </div>
                         <div className="hidden md:block fixed bottom-0 left-0 ml-10 mb-10 text-xs select-none">
-                            <h1 className="font-bold">&copy; 2025 Shansai Muraleetharan</h1>
+                            <h1 className="font-bold">&copy; {new Date().getFullYear() > 2025 && `2025 -`} {new Date().getFullYear()} Shansai Muraleetharan</h1>
                         </div>
                         <div className={"fixed bottom-0 right-0 text-2xl font-bold mr-10 mb-10 select-none"}>
                         {

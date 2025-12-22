@@ -62,7 +62,7 @@ export default function Home() {
                     </div>
                 </div>
             <div className="hidden md:block fixed bottom-0 ml-10 mb-10 font-serif text-xs text-white select-none">
-                <h1 className="font-bold">&copy; 2025 Shansai Muraleetharan</h1>
+                <h1 className="font-bold">&copy; {new Date().getFullYear() > 2025 && `2025 -`} {new Date().getFullYear()} Shansai Muraleetharan</h1>
             </div>
         </div>
     );
