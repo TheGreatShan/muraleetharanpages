@@ -5,7 +5,6 @@ import Link from "next/link";
 import Head from 'next/head';
 import { useState, useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
-import Snowfall from "react-snowfall";
 import NeuralNetworkBackground from "./components/neuralnetwork";
 
 export default function Home() {

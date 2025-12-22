@@ -2,7 +2,6 @@
 
 import Nav from "muralee/app/components/Nav";
 import React from "react";
-import { useState, useEffect } from "react";
 import NeuralNetworkBackground from "./neuralnetwork";
 
 
