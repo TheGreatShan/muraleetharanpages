@@ -55,13 +55,13 @@ export default function Home() {
                     <div className={"mt-4 md:flex mx-auto"}>
                         <div>
                             <SocialIcon network={"linkedin"} url={"https://www.linkedin.com/in/shansai-muraleetharan"}
-                                        bgColor={"black"} className={"mr-2"}/>
+                                        bgColor={"black"} className={"inline-block text-white bg-black font-serif py-4 px-3 rounded-full mr-2 shadow-lg shadow-white/20"}/>
                             <SocialIcon network={"github"} url={"https://github.com/TheGreatShan"}
-                                        bgColor={"black"} className={"mr-2"}/>
+                                        bgColor={"black"} className={"inline-block text-white bg-black font-serif py-4 px-3 rounded-full mr-2 shadow-lg shadow-white/20"}/>
                         </div>
                         <div className="mt-5 sm:my-auto">
-                            <Link href={"/about"} className={"text-white bg-black font-serif py-4 px-3 rounded-full mr-2"}>About</Link>
-                            <Link href={"/career"} className={"text-white bg-black font-serif py-4 px-3 rounded-full mr-2"}>Career</Link>
+                            <Link href={"/about"} className={"inline-block text-white bg-black font-serif py-4 px-3 rounded-full mr-2 shadow-lg shadow-white/20"}>About</Link>
+                            <Link href={"/career"} className={"inline-block text-white bg-black font-serif py-4 px-3 rounded-full mr-2 shadow-lg shadow-white/20"}>Career</Link>
                         </div>
                     </div>
                 </div>
