@@ -30,7 +30,7 @@ export default function Home() {
                     className="content-center bg-base-200 h-screen h-full text-white font-sans border-solid border-[7px] p-10 border-info-content">
                     <div className={"fixed top-0 left-0 font-bold ml-10 mt-10 text-[30px] font-serif"}>
                         {
-                            ctime == "" 
+                            ctime == ""
                             ? <span className="loading loading-dots loading-xs"></span>
                             : <h1>{ctime}</h1>
                         }
@@ -60,6 +60,7 @@ export default function Home() {
                         <div className="mt-5 sm:my-auto">
                             <Link href={"/about"} className={"inline-block text-white bg-black font-serif py-4 px-3 rounded-full mr-2 shadow-lg shadow-white/20"}>About</Link>
                             <Link href={"/career"} className={"inline-block text-white bg-black font-serif py-4 px-3 rounded-full mr-2 shadow-lg shadow-white/20"}>Career</Link>
+                            <Link href={"/photos"} className={"inline-block text-white bg-black font-serif py-4 px-3 rounded-full mr-2 shadow-lg shadow-white/20"}>Photos</Link>
                         </div>
                     </div>
                 </div>
