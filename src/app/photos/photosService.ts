@@ -1,3 +1,5 @@
+import "server-only"
+
 export interface GitHubFileLinks {
     self: string;
     git: string;
@@ -28,7 +30,9 @@ export interface Image {
 
 async function getPicsUrl() : Promise<GitHubContentItem[]>{
     const result =
-        await fetch("https://api.github.com/repos/TheGreatShan/pics/contents");
+        await fetch("https://api.github.com/repos/TheGreatShan/pics/contents", {
+            next: {revalidate: 86400}
+        });
 
     if (!result.ok)
         throw new Error("Cannot get any pictures from Github")
@@ -40,9 +44,13 @@ async function getPicsUrl() : Promise<GitHubContentItem[]>{
 export async function getPictures() : Promise<string[]> {
     const pics = await getPicsUrl();
     return await Promise.all(pics.map(async x => {
-        const result = await fetch(x.git_url)
-        if (!result.ok)
+        const result = await fetch(x.git_url, {
+            next: { revalidate: 86400 }
+        })
+
+        if (!result.ok){
             throw new Error("Cannot load picture from Github")
+        }
 
         const json: Image = await result.json();
         return json.content.replace(/\s/g, "");
