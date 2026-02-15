@@ -25,5 +25,6 @@ jobs:
           context: .
           file: DOCKERFILE
           push: true
-          tags: ghcr.io/muraleetharanpages:latest
+          tags: ghcr.io/thegreatshan/muraleetharanpages:latest
+
 
