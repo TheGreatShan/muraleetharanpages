@@ -19,6 +19,7 @@
     "react-social-icons": "^6.18.0",
     "react-tsparticles": "^2.12.2",
     "react-type-animation": "^3.2.0",
+    "server-only": "^0.0.1",
     "tsparticles": "^3.9.1",
     "tsparticles-slim": "^2.12.0"
   },
